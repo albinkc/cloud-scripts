@@ -11,7 +11,7 @@ curl -sSL https://agent.digitalocean.com/install.sh | sh
 adduser --disabled-password --gecos "" ubuntu
 
 #Copy ssh key from root
-##modify to put custom key using:
+##Use the following command to use a custom key
 #echo "<key>" > /home/ubuntu/.ssh/authorized_keys
 mkdir -p /home/ubuntu/.ssh
 cp /root/.ssh/authorized_keys /home/ubuntu/.ssh/authorized_keys
