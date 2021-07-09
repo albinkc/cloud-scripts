@@ -4,8 +4,8 @@
 set -x
 
 #Set Up DigitalOcean Droplet Monitoring
-#For DO instances only
-curl -sSL https://agent.digitalocean.com/install.sh | sh
+#For DigitalOcean instances only
+#curl -sSL https://agent.digitalocean.com/install.sh | sh
 
 #Add user without password and key based login only
 adduser --disabled-password --gecos "" ubuntu
@@ -16,7 +16,7 @@ adduser --disabled-password --gecos "" ubuntu
 mkdir -p /home/ubuntu/.ssh
 cp /root/.ssh/authorized_keys /home/ubuntu/.ssh/authorized_keys
 
-#Change ownership to user
+#Change ownership to newly created user
 chown -R ubuntu:ubuntu /home/ubuntu/.ssh
 
 #Set permissions. Maybe redundant if key was copied from root
