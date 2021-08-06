@@ -18,7 +18,7 @@ cp /root/.ssh/authorized_keys /home/ubuntu/.ssh/authorized_keys
 #Change ownership to newly created user
 chown -R ubuntu:ubuntu /home/ubuntu/.ssh
 
-#Set permissions. Maybe redundant if key was copied from root
+#Set permissions
 chmod 700 /home/ubuntu/.ssh
 chmod 644 /home/ubuntu/.ssh/authorized_keys
 
