@@ -1,5 +1,4 @@
 #Run As root
-#To-do: Convert to cloud-init compatible version
 #Show commands as they're being executed
 set -x
 
